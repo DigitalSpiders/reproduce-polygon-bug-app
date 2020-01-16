@@ -7,10 +7,8 @@ function App() {
   return (
     <MapboxGL.MapView style={{flex: 1}}>
       <MapboxGL.Camera
-        bounds={{
-          ne: [-7.939227, 39.594127],
-          sw: [-7.953227, 39.584127],
-        }}
+        centerCoordinate={[-7.946227, 39.589127]}
+        zoomLevel={14}
       />
 
       <MapboxGL.ShapeSource
