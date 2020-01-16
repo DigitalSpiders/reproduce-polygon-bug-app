@@ -26,7 +26,11 @@ function App() {
             ],
           },
         }}>
-        <MapboxGL.FillLayer id="fill" />
+        <MapboxGL.FillLayer id="fill" style={{fillColor: 'blue'}} />
+        <MapboxGL.LineLayer
+          id="line"
+          style={{lineColor: 'red', lineWidth: 2}}
+        />
       </MapboxGL.ShapeSource>
     </MapboxGL.MapView>
   );
